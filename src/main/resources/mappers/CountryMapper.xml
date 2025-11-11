@@ -1,0 +1,9 @@
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+    <mapper namespace="com.mymodern.calc.sideProject.mapper.CountryMapper">
+        <select id="CountryName" resultType="com.mymodern.calc.sideProject.entity.CountryName">
+            SELECT id, name FROM countries WHERE id = #{id}
+        </select>
+        <!-- <insert id="insertUser">
+            INSERT INTO users (name, email) VALUES (#{name}, #{email})
+        </insert> -->
+    </mapper>
