@@ -14,3 +14,5 @@ docker login         <br />
 docker image pull shengchunjob/sideprojects_job:V1.0   <br />
 docker run -p 80:8080 shengchunjob/sideprojects_job:V1.0  <br />
 make sure run it at port 80 which is the default HTTP port  <br />
+
+http://3.19.234.244/countryNamePath?id=1 (exampl access url, make sure it is http NOT https)
