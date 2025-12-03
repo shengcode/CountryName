@@ -1,0 +1,43 @@
+---
+hibernate:
+  transaction:
+    jta:
+      platform: org.hibernate.dialect.H2Dialect
+spring:
+  application:
+    name: sideProject
+  datasource:
+    driverClassName: org.h2.Driver
+    password: password
+    url: jdbc:h2:mem:testdb
+    username: sa
+  h2:
+    console:
+      enabled: true
+  jpa:
+    defer-datasource-initialization: true
+tokengen:
+  consumerssss:
+    secretssss: 2a6260dd-d913-4af8-a99c-f6a7428a3b75
+apitokenheader:
+  headerkey: api-protect
+apitoken:
+  headname: api-protect
+  consumer:
+    - 
+      name: Myecomerce
+      secret: b432be5a-8166-4975-96dc-06d2de2f2701
+      allowurl:
+        - /mycommerce-access/
+        - /lalala-hdhd/
+      denyurl:
+        - /dab-efg/
+    - 
+      name: mytest
+      secret: 9ee3d693-4626-4c69-9bf1-00c3a1f9bb22
+      allowurl:
+        - /mytest-access/
+        - /lalalaabcd-hdhd/
+      denyurl:
+        - /dab-efg/notallowed
+# https://www.baeldung.com/spring-boot-yaml-list

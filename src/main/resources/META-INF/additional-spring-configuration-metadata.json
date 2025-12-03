@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "apitoken.consumerssss.secretssss",
+    "type": "java.lang.String",
+    "description": "A description for 'apitoken.consumerssss.secretssss'"
+  },
+  {
+    "name": "apitoken.headname",
+    "type": "java.lang.String",
+    "description": "A description for 'apitoken.headname'"
+  }
+]}
